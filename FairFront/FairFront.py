@@ -248,8 +248,8 @@ class FairFront:
 
         #print("algorithm starts")
         for t in range(self.max_iterations):
-            if t % 50 == 0:
-                print("current iteration:", t)
+            # if t % 50 == 0:
+            #     print("current iteration:", t)
             sol, current_P = self.step_1(A_list)
             #print("passed step 1, current P is", current_P)
             
