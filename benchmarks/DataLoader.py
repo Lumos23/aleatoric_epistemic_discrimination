@@ -158,7 +158,7 @@ def load_data(name='adult', modified = True, perturbed = False):
                        
         if modified == True:
             '''
-            using the selected and discretized variables as in FATO approach
+            using the selected and discretized variables as in FairFront approach
             '''    
             # discretize age, education-num, hours-per-week
             df['age_discrete'] = df.apply(lambda x: get_discrete_age(x), axis=1)

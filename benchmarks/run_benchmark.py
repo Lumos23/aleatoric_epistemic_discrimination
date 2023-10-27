@@ -16,7 +16,7 @@ warnings.filterwarnings("ignore")
 
 
 def main(argv):
-    model = 'gbm'
+    model = 'rf'
     fair = 'reduction'
     seed = 42
     constraint = 'eo'
@@ -33,11 +33,11 @@ def main(argv):
             print('python run_benchmark.py -m [model name] -f [fair method] -c [constraint] -n [num iter] -i [inputfile] -s [seed]')
             print('\n')
             print('Options for arguments:')
-            print('[model name]: gbm, logit, rf (Default: gbm)')
-            print('[fair method]: reduction, eqodds, roc (Default: reduction)')
+            print('[model name]: gbm, logit, rf (Default: rf)')
+            print('[fair method]: reduction, eqodds, roc, leveraging, original (Default: reduction)')
             print('[constraint]: eo, sp, (Default: eo)')
             print('[num iter]: Any positive integer (Default: 10) ')
-            print('[inputfile]: adult, adult_FATO, compas, compas_modified ...  (Default: compas_modified)')
+            print('[inputfile]: adult, compas, german_credit ...  (Default: compas_modified)')
             print('[seed]: Any integer (Default: 42)')
             print('\n')
             sys.exit()
